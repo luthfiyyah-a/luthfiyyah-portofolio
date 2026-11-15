@@ -1,0 +1,8 @@
+# Preview lokal tanpa install Ruby: docker compose up  -> buka http://localhost:4000/luthfiyyah-portofolio/
+services:
+  site:
+    image: ruby:3.3-slim
+    working_dir: /srv/site
+    volumes: [".:/srv/site"]
+    ports: ["4000:4000"]
+    command: sh -c "apt-get update -qq && apt-get install -y -qq build-essential >/dev/null && gem install -N 'jekyll:~>3.10' kramdown-parser-gfm webrick csv base64 bigdecimal logger && jekyll serve --host 0.0.0.0"

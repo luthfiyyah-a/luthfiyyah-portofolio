@@ -1,0 +1,19 @@
+{% comment %} Satu entri pengalaman. Dipanggil: include experience-entry.html job=job {% endcomment %}
+{% assign job = include.job %}
+<article class="entry">
+    <div class="entry-header">
+        <div>
+            <h3 class="entry-title">{{ job.title }}</h3>
+            <div class="entry-company">{{ job.company }}</div>
+            <div class="entry-subtitle">{{ job.location }}</div>
+        </div>
+        <div class="entry-date">{{ job.period }}</div>
+    </div>
+    {% if job.description %}<div class="entry-description">{{ job.description }}</div>{% endif %}
+    {% if job.highlights %}
+    <ul class="entry-list">
+        {% for item in job.highlights %}<li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</article>

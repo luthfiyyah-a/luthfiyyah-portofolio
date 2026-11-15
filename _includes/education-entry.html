@@ -1,0 +1,20 @@
+{% assign edu = include.edu %}
+<article class="entry">
+    <div class="entry-header">
+        <div>
+            <h3 class="entry-title">{{ edu.degree }}</h3>
+            <div class="entry-company">{{ edu.school }}</div>
+        </div>
+        <div class="entry-date">{{ edu.period }}</div>
+    </div>
+    <div class="entry-subtitle">{{ edu.location }}{% if edu.gpa %} • GPA: {{ edu.gpa }}{% endif %}</div>
+    {% if edu.thesis %}<div class="entry-description"><strong>Thesis:</strong> {{ edu.thesis }}</div>{% endif %}
+    {% if edu.achievements %}
+    <div class="highlights">
+        <ul>
+            {% for item in edu.achievements %}<li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</article>
