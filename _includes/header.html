@@ -1,14 +1,23 @@
 {% assign a = site.author %}
-<header>
-    <div class="header-content">
+<header class="sidebar">
+    <div class="sidebar-top">
+        {% if a.photo and a.photo != "" %}
+        <img class="avatar" src="{{ a.photo | relative_url }}" alt="{{ a.name }}" width="96" height="96">
+        {% else %}
+        <div class="avatar avatar-monogram" aria-hidden="true">LH</div>
+        {% endif %}
         <h1>{{ a.name }}</h1>
-        <p>{{ a.tagline }}</p>
-        <div class="header-meta">
-            <span>{{ a.location }}</span>
-            <span aria-hidden="true">•</span>
-            <a href="mailto:{{ a.email }}">{{ a.email }}</a>
-            <span aria-hidden="true">•</span>
-            <a href="{{ a.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        <p class="tagline">{{ a.tagline }}</p>
+        <nav class="nav" aria-label="Sections">
+            <a class="nav-link" href="#about"><span class="nav-rule" aria-hidden="true"></span><span class="nav-label">About</span></a>
+            <a class="nav-link" href="#experience"><span class="nav-rule" aria-hidden="true"></span><span class="nav-label">Experience</span></a>
+            <a class="nav-link" href="#education"><span class="nav-rule" aria-hidden="true"></span><span class="nav-label">Education</span></a>
+            <a class="nav-link" href="#skills"><span class="nav-rule" aria-hidden="true"></span><span class="nav-label">Skills</span></a>
+        </nav>
     </div>
+    <ul class="contact">
+        <li>{{ a.location }}</li>
+        <li><a href="mailto:{{ a.email }}">{{ a.email }}</a></li>
+        <li><a href="{{ a.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
 </header>
