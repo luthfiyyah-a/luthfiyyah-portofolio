@@ -15,7 +15,7 @@ author:
   location: "Jakarta, Indonesia"
   email: "luthfiyyah.hanifah23@gmail.com"
   # Foto profil (opsional): isi path relatif repo, mis. assets/img/photo.jpg. Kosong = monogram "LH".
-  photo: ""
+  photo: "assets/img/photo.jpg"
   linkedin: "https://www.linkedin.com/in/luthfiyyah-hanifah-amari"
   about: >-
     Recent graduate from Informatika ITS with strong interest in backend engineering, algorithms, and computing education.
