@@ -1,11 +1,20 @@
-{% comment %} Satu entri pengalaman. Dipanggil: include experience-entry.html job=job {% endcomment %}
+{% comment %}
+  Satu entri pengalaman, bisa dibuka/tutup (<details>, jalan tanpa JS).
+  Dipanggil: include experience-entry.html job=job  (tambah open=true agar terbuka dari awal)
+  name="experience" = hanya satu terbuka sekaligus (browser modern; main.js jadi cadangan).
+{% endcomment %}
 {% assign job = include.job %}
-<article class="entry">
-    <div class="entry-date">{{ job.period }}</div>
+<details class="entry entry-toggle" name="experience"{% if include.open %} open{% endif %}>
+    <summary class="entry-summary">
+        <span class="entry-date">{{ job.period }}</span>
+        <span class="entry-head">
+            <span class="entry-title">{{ job.title }}</span>
+            <span class="entry-company">{{ job.company }}</span>
+            <span class="entry-subtitle">{{ job.location }}</span>
+        </span>
+        <span class="entry-chevron" aria-hidden="true"></span>
+    </summary>
     <div class="entry-body">
-        <h3 class="entry-title">{{ job.title }}</h3>
-        <div class="entry-company">{{ job.company }}</div>
-        <div class="entry-subtitle">{{ job.location }}</div>
         {% if job.description %}<div class="entry-description">{{ job.description }}</div>{% endif %}
         {% if job.highlights %}
         <ul class="entry-list">
@@ -14,4 +23,4 @@
         </ul>
         {% endif %}
     </div>
-</article>
+</details>

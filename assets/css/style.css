@@ -103,6 +103,30 @@ h2 {
 }
 .entry-list strong { font-weight: 600; }
 
+
+/* ---------- Experience: accordion (<details>) ---------- */
+.entry-toggle { display: block; padding: 0; }
+.entry-summary {
+    display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1rem; align-items: start;
+    padding: 1.25rem 1rem; cursor: pointer; list-style: none; border-radius: var(--radius);
+    min-height: 44px;
+}
+.entry-summary::-webkit-details-marker { display: none; }
+.entry-summary .entry-date { grid-column: 1; grid-row: 1; }
+.entry-summary .entry-head { grid-column: 1; grid-row: 2; display: flex; flex-direction: column; }
+.entry-chevron {
+    grid-column: 2; grid-row: 1 / span 2; align-self: center;
+    width: 0.6rem; height: 0.6rem; margin-right: 0.35rem;
+    border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+    transform: rotate(45deg); transition: transform 200ms ease;
+}
+.entry-toggle[open] .entry-chevron { transform: rotate(-135deg); }
+.entry-toggle[open] { background: var(--surface); border-color: var(--line); }
+.entry-toggle[open] .entry-summary { padding-bottom: 0.5rem; }
+.entry-toggle .entry-body { padding: 0 1rem 1.25rem; animation: entry-open 250ms ease; }
+.entry-toggle .entry-description { margin-top: 0; }
+@keyframes entry-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
 /* ---------- Skills ---------- */
 .skill-group { margin-bottom: 1.25rem; }
 .skill-label {
@@ -135,6 +159,12 @@ h2 {
 @media (min-width: 640px) {
     h1 { font-size: 2.5rem; }
     .entry { grid-template-columns: 9rem 1fr; gap: 1.5rem; }
+    .entry-toggle { display: block; }
+    .entry-summary { grid-template-columns: 9rem 1fr auto; gap: 1.5rem; }
+    .entry-summary .entry-date { grid-column: 1; grid-row: 1; }
+    .entry-summary .entry-head { grid-column: 2; grid-row: 1; }
+    .entry-chevron { grid-column: 3; grid-row: 1; align-self: center; }
+    .entry-toggle .entry-body { padding-left: calc(1rem + 9rem + 1.5rem); }
 }
 
 /* ---------- Desktop: dua kolom, sidebar sticky ---------- */
