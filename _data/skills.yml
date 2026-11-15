@@ -1,0 +1,10 @@
+- group: Programming Languages
+  items: [Java, C/C++, Python]
+- group: Backend & Frameworks
+  items: [Spring Boot, jsonRPC, REST APIs, gRPC, Laravel]
+- group: Databases & Storage
+  items: [PostgreSQL, MongoDB, DynamoDB, Amazon S3]
+- group: Infrastructure & Tools
+  items: [AWS, Tencent Cloud, Docker, Kubernetes, Git/GitHub/GitLab, Datadog, CI/CD Pipelines, Solace]
+- group: Other Competencies
+  items: [Algorithm Design, Data Structures, Microservices, System Design, Teaching & Mentoring, Web Scraping, Machine Learning Basics]

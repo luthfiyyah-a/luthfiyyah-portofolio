@@ -1,0 +1,14 @@
+{% assign a = site.author %}
+<header>
+    <div class="header-content">
+        <h1>{{ a.name }}</h1>
+        <p>{{ a.tagline }}</p>
+        <div class="header-meta">
+            <span>{{ a.location }}</span>
+            <span aria-hidden="true">•</span>
+            <a href="mailto:{{ a.email }}">{{ a.email }}</a>
+            <span aria-hidden="true">•</span>
+            <a href="{{ a.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+</header>

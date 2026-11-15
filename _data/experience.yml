@@ -1,0 +1,44 @@
+# Pengalaman kerja, urut dari yang terbaru.
+# Tambah pekerjaan baru = salin satu blok "- title: ..." ke paling atas.
+- title: Software Engineer
+  company: XLSmart (Axiata Digital Labs)
+  location: Jakarta, Indonesia
+  period: Apr 2026 – Present
+  description: Working within Axiata Digital Labs, the regional technology hub of Axiata Group, serving 73M+ subscribers.
+  highlights:
+    - Revamped AXIS Webstore journey by integrating Starter Pack and package purchase into a single seamless flow through enhanced API integration
+    - Proactively investigated CI/CD performance bottlenecks in team repositories, collaborated with DevOps team to implement improvements, reducing pipeline execution time from 20–40 minutes to 7–11 minutes
+    - Building Retrieval-Augmented Generation (RAG) system for internal use as part of company's AI adoption initiative with multi-source data ingestion (Confluence, GitLab, databases)
+
+- title: Software Engineer Intern
+  company: Traveloka
+  location: Jakarta, Indonesia
+  period: Mar 2025 – Mar 2026
+  description: "Worked on backend systems for SEA's travel super-app serving 40M+ monthly active users. Tech: Java, Spring Boot, AWS, MongoDB, DynamoDB."
+  highlights:
+    - Owned end-to-end development of production refund tracking feature, improving refund status visibility and reducing case resolution time
+    - Implemented real-time refund accuracy alerting, cutting detection time from >1 day to real-time; helped drive policy fix increasing customer refund accuracy from 93.84% to 97.17%
+    - Worked on event-driven solution preventing data inconsistency between backend services via SNS, SQS, Lambda propagation
+    - Implemented Trunk-Based Development (TBD) for 3 production services by updating CI/CD pipelines, reducing PR steps per deploy by ~50% and enabling faster releases
+    - Extended scalability of attachment rules system by integrating new data identifiers and in-memory caching logic, enabling non-engineers to manage document requirements independently
+    - Reduced refund rejection rate by ~10% in 2 months through configurable validation and edge-case fixes uncovered during end-to-end testing
+    - Migrated backend services for upcoming localization model change by auditing locale usage, introducing backward-compatible language–country–currency handling
+
+- title: Teaching Assistant
+  company: Sepuluh Nopember Institute of Technology (ITS)
+  location: Surabaya, Indonesia
+  period: Feb 2022 – Jul 2024
+  description: Assisted in 6 undergraduate courses covering programming fundamentals, data structures, mobile development, and framework-based architectures.
+  highlights:
+    - Prepared programming exercises and lab materials including competitive programming-style problems
+    - Led lab sessions, explained core programming concepts, and guided students through hands-on coding tasks
+    - Evaluated assignments, projects, and practical exams; conducted one-on-one review sessions to assess student understanding
+
+- title: Coding Teacher
+  company: Edufic
+  location: Jakarta, Indonesia
+  period: Feb 2024 – Apr 2025
+  description: Led 3 classes for students aged 5–12, teaching coding principles using Scratch.
+  highlights:
+    - Incorporated Islamic values into lessons and created engaging classroom atmosphere with interactive games
+    - Monitored student progress and provided personalized feedback; met with parents regularly to discuss progress

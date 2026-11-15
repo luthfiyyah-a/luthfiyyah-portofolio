@@ -1,0 +1,25 @@
+# Pengaturan situs + data profil.
+# Ganti di sini, semua halaman ikut berubah.
+title: "Luthfiyyah Hanifah Amari - Software Engineer"
+description: "Portfolio Luthfiyyah Hanifah Amari, software engineer dengan fokus backend."
+lang: en
+
+# Situs ini project site GitHub Pages: https://luthfiyyah-a.github.io/luthfiyyah-portofolio/
+# Kalau nanti pakai custom domain, ubah baseurl jadi "".
+baseurl: "/luthfiyyah-portofolio"
+url: "https://luthfiyyah-a.github.io"
+
+author:
+  name: "Luthfiyyah Hanifah Amari"
+  tagline: "Software Engineer | Backend Focus | 1 Year of Experience"
+  location: "Jakarta, Indonesia"
+  email: "luthfiyyah.hanifah23@gmail.com"
+  linkedin: "https://www.linkedin.com/in/luthfiyyah-hanifah-amari"
+  about: >-
+    Recent graduate from Informatika ITS with strong interest in backend engineering, algorithms, and computing education.
+    Currently at XLSmart/Axiata Digital Labs focusing on scalable systems and CI/CD optimization. Previously interned at Traveloka
+    on refund and payment systems. Passionate about reliable software engineering, mentoring, and K-12 computing education.
+
+exclude:
+  - README.md
+  - docker-compose.yml
