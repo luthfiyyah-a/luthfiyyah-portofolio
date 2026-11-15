@@ -11,6 +11,7 @@ Live: https://luthfiyyah-a.github.io/luthfiyyah-portofolio/
 | Tambah/ubah pengalaman kerja | `_data/experience.yml` |
 | Pendidikan & prestasi | `_data/education.yml` |
 | Skill | `_data/skills.yml` |
+| Foto profil (opsional; kosong = monogram "LH") | `photo:` di `_config.yml`, mis. `assets/img/photo.jpg` |
 | Warna, font, jarak | `assets/css/style.css` (variabel di `:root`) |
 | Tata letak satu entri | `_includes/*.html` |
 

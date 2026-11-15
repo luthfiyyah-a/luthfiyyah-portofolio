@@ -1,25 +1,25 @@
 ---
 layout: default
 ---
-<section>
+<section id="about" class="reveal" aria-label="About">
     <p class="about">{{ site.author.about }}</p>
 </section>
 
-<section>
+<section id="experience" class="reveal">
     <h2>Professional Experience</h2>
     {% for job in site.data.experience %}
         {% include experience-entry.html job=job %}
     {% endfor %}
 </section>
 
-<section>
+<section id="education" class="reveal">
     <h2>Education</h2>
     {% for edu in site.data.education %}
         {% include education-entry.html edu=edu %}
     {% endfor %}
 </section>
 
-<section>
+<section id="skills" class="reveal">
     <h2>Technical Skills</h2>
     {% include skills.html %}
 </section>

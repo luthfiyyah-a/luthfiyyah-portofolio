@@ -14,11 +14,17 @@ author:
   tagline: "Software Engineer | Backend Focus | 1 Year of Experience"
   location: "Jakarta, Indonesia"
   email: "luthfiyyah.hanifah23@gmail.com"
+  # Foto profil (opsional): isi path relatif repo, mis. assets/img/photo.jpg. Kosong = monogram "LH".
+  photo: ""
   linkedin: "https://www.linkedin.com/in/luthfiyyah-hanifah-amari"
   about: >-
     Recent graduate from Informatika ITS with strong interest in backend engineering, algorithms, and computing education.
     Currently at XLSmart/Axiata Digital Labs focusing on scalable systems and CI/CD optimization. Previously interned at Traveloka
     on refund and payment systems. Passionate about reliable software engineering, mentoring, and K-12 computing education.
+
+# Pertahankan tanda kutip lurus di teks yang diproses markdownify (isi tidak berubah).
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 exclude:
   - README.md
